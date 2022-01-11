@@ -32,15 +32,25 @@ int main() {
     cin >> x ;
     cout << "great! Now please choose another one: \n";
     cin >> y;
+    while (x>y){
+        cout << " the second number sholud by bigger then the first pleas try again and choose the second number: \n";
+        cin>>y;
+    }
+    
     srand(time(NULL));
     z = rand()%(y-x+1)+x;
     cout <<z;
     cout << " great now can you guess my choise?";
     
+        
    while (g!=z) {
        cin >> g;
        i++;
-       if (g>z){
+       if (g>y or g<x){
+           cout<< "Your number is out of range, pleas try again \n";
+           
+       }
+           else if(g>z){
            cout << " No man, too much! \n";
            cout << "try again !";
        }
@@ -48,7 +58,11 @@ int main() {
            cout << " No man, more! \n";
            cout << "try again !";
        }
-    }
+   }
+        
+    
+    
+    
     if (i==1){
         answer=shot;
         
