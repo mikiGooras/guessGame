@@ -2,25 +2,32 @@
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
-#include <ctime>
+#include <unistd.h>
+
+
 
 
 using namespace std;
 
-//Clock myClock;
-
-
 int x, y, z, g, i=0;
-string shot = " shot";
-string shots = " shots";
-string answer;
+string shot = " shot",shots = " shots", answer, order;
+
 
 int main() {
-    cout << "Hello, World!\n";
-    cout << " Do you wanna play a game with me? \n";
     
-    cout<< "The rules are simple, You give me two numbers and i draft one between the range \n";
-    cout << "Your job is to guess my choise! \n " ;
+    cout << "Hello, player!\n" << endl;
+    sleep(1);
+    system("clear");
+    cout << " Do you wanna play a game with me? \n" << endl;
+    sleep(1);
+    system("clear");
+    
+    cout<< "The rules are simple, You give me two numbers and i draft one between the range \n" ;
+    sleep(1);
+    system("clear");
+    cout << "Your job is to guess my choise! \n ";
+    sleep(1);
+    system("clear");
     cout << " Can we start now? pleas choose the first number: \n";
     cin >> x ;
     cout << "great! Now please choose another one: \n";
